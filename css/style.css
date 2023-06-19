@@ -1,0 +1,291 @@
+/* FONT AWESOME ICONS & GOGOLE FONT */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --color-primary: #003169;
+    --color-primary--light: #034692;
+    --color-primary--dark: #042b58;
+    --color-white: #ffff;
+    --color-white--dark: #d6d6d6;
+    --color-white--transparent: rgba(255, 255, 255, 0.200);
+    --color-text: #333333;
+    --color-text-sdark: #6f8190;
+    --color-text-mdark: #49575f;
+    --color-text--dark: #2F2F2F;
+
+    --font-default: 'Roboto', sans-serif;
+    --font-acme: 'Acme', sans-serif;
+
+    --color-border: #ebebeb;
+    --section-highlight: #FAFAFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.25%;
+}
+
+body {
+    font-size: 1.6rem;
+    position: relative;
+    font-family: var(--font-default);
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+p a{
+    text-decoration: none;
+    font-family: var(--font-default);
+}
+
+.center__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+
+.highlight__section {
+    background-color: var(--section-highlight);
+}
+
+
+.description-sm {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: var(--color-text-sdark);
+    line-height: 2.5rem;
+}
+
+.owl__button {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.418);
+    color: var(--color-white);
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+    opacity: .8;
+    transform: translateY(-100%);
+}
+
+.owl__button:hover {
+    opacity: 0.6;
+}
+
+
+.owl__previous {
+    right: 1.5rem;
+}
+
+.owl__next {
+    left: 1.5rem;
+}
+
+
+/* -------------ABOUT US PAGE START----------  */
+.about {
+    margin: 10rem 0;
+}
+
+.about__title,
+.about__title--md,
+.about__title--sm {
+    color: var(--color-primary--dark);
+    font-weight: bolder;
+}
+
+.about__title {
+    font-size: 5.5rem;
+}
+
+.about__title--md {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+.about__title--sm {
+    font-size: 2rem;
+    margin-top: 3.5rem;
+}
+
+.about__ftc {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem 0;
+
+}
+
+.ftc__support__img {
+    max-height: 50rem;
+    max-width: 50rem;
+}
+
+.about__peragraph,
+.about\:list__item,
+.table__data,
+.table__header {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: var(--color-text);
+    margin-top: 2rem;
+}
+
+.about\:list__item a {
+    text-decoration: none;
+}
+
+.small-gap {
+    margin-top: 2rem;
+}
+
+.small-gap .about\:list__item {
+    margin: 1rem;
+}
+
+.about__link {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.about\:image__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 170px);
+    grid-auto-rows: 20rem;
+    gap: 5rem;
+    margin-top: 5rem;
+
+}
+
+.about\:image__item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: var(--color-primary);
+    font-weight: 400;
+    border: 0.1rem solid var(--color-border);
+}
+
+.bookanappointment {
+    font-size: 2.8rem;
+    text-align: center;
+    max-width: 90rem;
+    margin: auto;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    padding: 4rem 2rem;
+    font-family: var(--font-acme);
+    margin: 20rem auto;
+    color: var(--color-text);
+}
+
+.about__list {
+    padding-left: 5rem;
+}
+
+.about\:list__item.gap-sm {
+    margin-top: 1rem;
+}
+
+.table {
+    width: 80%;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.table__header.value,
+.table__data.value {
+    text-align: center;
+}
+
+.table__data,
+.table__header {
+    border-bottom: 1px solid var(--color-border);
+    padding: 1rem;
+}
+
+.swiper__ourteam {
+    border: 1px solid red;
+}
+
+.about\:staff {
+    margin-top: 3rem;
+}
+
+.staff__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    color: var(--color-text-sdark);
+}
+
+.staff\:card__image {
+    margin-bottom: .5rem;
+}
+
+.staff\:card__name {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    color: var(--color-text);
+}
+
+.map__loader {
+    width: 100%;
+    height: 40rem;
+}
+
+.about__contact {
+    margin-top: 3rem;
+}
+
+.boxes__box {
+    border: 1px solid var(--color-border);
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact__boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.box__icon {
+    color: var(--color-text-dark);
+    font-size: 2rem;
+}
+
+.box__content {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.box__title {
+    color: var(--color-text--dark);
+}
+
+.box__info {
+    color: var(--color-text-mdark);
+}
